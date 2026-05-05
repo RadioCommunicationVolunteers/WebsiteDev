@@ -1,5 +1,5 @@
 ---
-title: Services
+title: Our Services
 linkTitle: Services
 description: Volunteering radio communication services for public events and our community.
 menu: { main: { weight: 10 } }

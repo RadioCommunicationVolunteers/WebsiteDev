@@ -1,5 +1,5 @@
 ---
-title: Radio Communication Volunteers of St. Joseph County, IN
+title: Radio Communication Volunteers </br> <i>of St. Joseph County, IN</i>
 description: Providing Radio Communication Support for Public Events and Community Emergencies.
 params:
   body_class: td-navbar-links-all-active
@@ -30,9 +30,7 @@ params:
 
 {{% blocks/lead color="white" %}}
 
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+We believe in serving others, in promoting amateur radio in the community and providing the training and support required to become an amateur radio operator and emergency communications provider.
 
 (Sadly, Goldydocs isn't a real project, but you can use this site as an example
 to create your own real websites with [Docsy](https://docsy.dev))

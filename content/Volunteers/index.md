@@ -1,8 +1,8 @@
 ---
-title: Volunteers
+title: Volunteers Wanted
 linkTitle: Volunteers
-description: Start voluntering today.
-menu: { main: { weight: 10 } }
+description: Start volunteering today.
+menu: { main: { weight: 10 } } 
 ---
 
 {{% blocks/cover
@@ -14,6 +14,14 @@ menu: { main: { weight: 10 } }
 <!-- prettier-ignore -->
 {{% _param description %}}
 {.display-6}
+
+{{% blocks/button-modal
+  caption="Apply Now"
+  title="Volunteer Application"
+  emailTo="techiee09@gmail.com"
+%}}
+
+{{% /blocks/button-modal %}}
 
 {{% /blocks/cover %}}
 

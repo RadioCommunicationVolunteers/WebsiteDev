@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 locale = 'en-us'
-title = 'Radio Communication Volunteers of St. Joseph County, IN'
+title = 'Radio Communication Volunteers'
 theme = 'docsy'
 
 layoutDir = 'layouts'
@@ -91,7 +91,7 @@ FA = '<i class="fa-{1} fa-{2} text-{3} px-1"></i>'
     no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
 
     [params.ui.readingtime]
-    enable = false
+    enable = true
 
 [[params.links.user]]
 name = "User mailing list"
