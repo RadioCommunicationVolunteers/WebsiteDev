@@ -15,6 +15,14 @@ menu: { main: { weight: 10 } }
 {{% _param description %}}
 {.display-6}
 
+{{% blocks/button-modal
+  caption="Contact Us"
+  title="Contact Us"
+  emailTo="techiee09@gmail.com"
+%}}
+
+{{% /blocks/button-modal %}}
+
 {{% /blocks/cover %}}
 
 {{% blocks/lead color="white" %}}

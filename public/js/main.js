@@ -6470,7 +6470,7 @@ limitations under the License.
           }
 
           var query = $(this).val();
-          var searchPage = 'http://localhost:1313/search/?q=' + query;
+          var searchPage = 'http://192.168.1.239:1313/search/?q=' + query;
           document.location = searchPage;
 
           return false;

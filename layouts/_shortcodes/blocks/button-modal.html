@@ -18,48 +18,24 @@
           </div>
           <div class="modal-body">
             <div class="container-fluid">
-              <form id="bootstrapModalForm">
-                <div class="row">
-                  <div class="col-sm-3">
-                    <div class="input-group date" data-provide="datepicker">
-                      <div class="input-group-prepend">
-                          <span class="input-group-text" id="dateLabel">Date</span>
-                      </div>
-                      <input id="datepicker1" type="text" class="form-control" aria-describedby="dateLabel" />
-                      <div class="input-group-addon">
-                          <span class="glyphicon glyphicon-th"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-8">
+              <form id="bootstrapModalForm">                
+                {{ .Inner -}}
+                <div class="row mb-4">
+                  <div class="col-sm-12">
                     <div class="input-group">
                       <div class="input-group-prepend">
-                          <span class="input-group-text" id="callsignLabel">CallSign</span>
+                        <span class="input-group-text" id="formEmailFromLabel">Email</span>
                       </div>
-                      <input id="callsign" type="text" class="form-control" aria-describedby="callsignLabel" />
-                      <div class="input-group-append">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">class</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Tech</a>
-                          <a class="dropdown-item" href="#">General</a>
-                          <a class="dropdown-item" href="#">Extra</a>
-                          <div role="separator" class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">None</a>
-                        </div>
+                      <input type="email" id="formEmailFrom" class="form-control" />
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-1"></div>
+                      <div class="col-sm-10">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="form-outline mb-4">
-                  <label class="col-sm-2 col-form-label" for="bootstrapModalName">Name</label>
-                  <input type="text" id="bootstrapModalName" class="form-control" placeholder="First Last"/>
-                </div>
-                <div class="form-group mb-4">
-                  <input type="emailFrom" id="bootstrapModalEmailFrom" class="form-control" />
-                  <label class="form-label" for="bootstrapModalEmailFrom">Email address</label>
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                {{ .Inner -}}
                 <div class="form-check d-flex justify-content-center mb-4">
                   <input class="form-check-input me-2" type="checkbox" value="" id="bootstrapModalSendCopy" checked />
                   <label class="form-check-label" for="bootstrapModalSendCopy">
@@ -75,20 +51,19 @@
               <label id="emailTo"><i>{{- $emailTo := . -}}{{ $emailTo | html -}}</i></label>
               {{ end -}}
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">submit</button>
+              <button action="mailto:\\techiee09@gmail.com" type="submit" class="btn btn-primary">Submit</button>
           </div>
       </div>
   </div>
 </div>
 {{/**/ -}}
 
-{{ partial "scripts/bootstrap" . }}
 <script>
   $(function() {
     $("#datepicker1").datepicker("setDate", new Date());
-    $('#bootstrapModal').appendTo("body").modal('show'); 
     $('[data-bs-target="#bootstrapModal"]').click(function() {
       $('#bootstrapModal').appendTo("body").modal('show'); 
+      $('.dropdown-toggle').dropdown();
     });
     $('#datepicker1').datepicker({
           "setDate": new Date(),
